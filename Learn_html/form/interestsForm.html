@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interests</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body {
+        background-color: #d5feff;
+    }
+
+    h2 {
+        color: white;
+        background-color: #ff4c00;
+        text-align: center;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    label {
+        color: blue;
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+
+    input[type=submit], input[type=reset] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+        margin: 5px;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    input[type=reset]:hover {
+        background-color: #45a049;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: white;
+        padding: 20px;
+        margin: 20px 200px;
+    }
+
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+</style>
+<body>
+<h1>Phần 1:</h1>
+<div class="container">
+    <h2>SỞ THÍCH CỦA BẠN</h2>
+    <form action="#">
+        <div class="row">
+            <div class="col-25">
+                <label>Họ và tên</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="yourName">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Email</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Sở thích</label>
+            </div>
+            <div class="col-75">
+                <input type="checkbox" name="hobby"> Thể thao
+                <input type="checkbox" name="hobby"> Lướt web
+                <input type="checkbox" name="hobby"> Du lịch
+                <input type="checkbox" name="hobby"> Âm nhạc
+                <input type="checkbox" name="hobby"> Chơi game
+                <input type="checkbox" name="hobby"> Đọc sách
+                <input type="checkbox" name="hobby"> Điện ảnh
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <input type="reset" value="Nhập lại">
+            <input type="submit" value="Gửi thông tin">
+        </div>
+    </form>
+</div>
+
+
+<h1>Phần 2:</h1>
+<div class="container">
+    <h2>ĐĂNG KÝ HỌC VIÊN</h2>
+    <form action="#">
+        <div class="row">
+            <div class="col-25">
+                <label>Họ và tên</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="fullName">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Ngày sinh</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="birthDay">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Giới tính</label>
+            </div>
+            <div class="col-75">
+                <input type="radio" name="gender" checked> Nam
+                <input type="radio" name="gender"> Nữ
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Địa chỉ</label>
+            </div>
+            <div class="col-75">
+                <textarea name="address" style="height:200px"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Lớp</label>
+            </div>
+            <div class="col-25">
+                <select name="className">
+                    <option value="">----- Chọn lớp -----</option>
+                    <option value="12A1">12A1</option>
+                    <option value="12A2">12A2</option>
+                    <option value="12A3">12A3</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Email</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Điện thoại</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="phone">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <input type="reset" value="Nhập lại">
+            <input type="submit" value="Đăng ký">
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>
