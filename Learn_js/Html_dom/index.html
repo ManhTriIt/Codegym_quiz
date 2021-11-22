@@ -1,63 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Dom</title>
-  </head>
-  <body>
-    <p>Nhap ten cua ban vao o ben duoi</p>
-    <input type="text" id="myName" />
-    <button type="button" onclick="getInput()">Hien thi ten</button>
+</head>
+<body>
+<p>Nhap ten cua ban vao o ben duoi</p>
+<input type="text" id="myName"/>
+<button type="button" onclick="getInput()">Hien thi ten</button>
 
-    <p id="demo">Click me</p>
+<p id="demo">Click me</p>
 
-    <select id="mySelect">
-      <option value="Audi">Audi</option>
-      <option value="BMW">BMW</option>
-      <option value="Toyota">Toyota</option>
-      <option value="'Volvo">Volvo</option>
-    </select>
+<select id="mySelect">
+    <option value="Audi">Audi</option>
+    <option value="BMW">BMW</option>
+    <option value="Toyota">Toyota</option>
+    <option value="'Volvo">Volvo</option>
+</select>
 
-    <p id="demo2">This is a text</p>
+<p id="demo2">This is a text</p>
 
-    <script>
-      // Document dai dien cho toan bo trang web
-      // Muon lay bat ky thanh phan nao trong trang HTML, chung ta phai su dung den doi tuong "document"
-      // Lay gia tri nhap vao hien thi ra man hinh
-      function getInput() {
+<script>
+    // Document dai dien cho toan bo trang web
+    // Muon lay bat ky thanh phan nao trong trang HTML, chung ta phai su dung den doi tuong "document"
+    // Lay gia tri nhap vao hien thi ra man hinh
+    function getInput() {
         let myInput = document.getElementById("myName");
         let myName = myInput.value;
         alert("Ten cua ban la: " + myName);
-      }
+    }
 
-      // Su kien click
-      let demo = document.getElementById("demo");
-      demo.addEventListener("click", clickFunction);
-      function clickFunction() {
+    // Su kien click
+    let demo = document.getElementById("demo");
+    demo.addEventListener("click", clickFunction);
+
+    function clickFunction() {
         alert("Hello");
-      }
+    }
 
-      // Su kien change
-      let selectedElement = document.getElementById("mySelect");
-      selectedElement.addEventListener("change", changeFunction);
-      function changeFunction() {
+    // Su kien change
+    let selectedElement = document.getElementById("mySelect");
+    selectedElement.addEventListener("change", changeFunction);
+
+    function changeFunction() {
         let selectValue = selectedElement.value;
         alert(selectValue);
-      }
+    }
 
-      // Su kien mouseover va mouseout
-      let demo2 = document.getElementById("demo2");
-      demo2.addEventListener("mouseover", mouseover);
-      demo2.addEventListener("mouseout", mouseout);
-      function mouseover() {
-          demo2.style.color = "red";
-      }
-      
-      function mouseout() {
-          demo2.style.color = "black";
-      }
-    </script>
-  </body>
+    // Su kien mouseover va mouseout
+    let demo2 = document.getElementById("demo2");
+    demo2.addEventListener("mouseover", mouseover);
+    demo2.addEventListener("mouseout", mouseout);
+
+    function mouseover() {
+        demo2.style.color = "red";
+    }
+
+    function mouseout() {
+        demo2.style.color = "black";
+    }
+</script>
+</body>
 </html>
