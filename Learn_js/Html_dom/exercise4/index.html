@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiem tra so chan</title>
+  </head>
+  <body>
+    <p>Nhập số</p>
+    <input type="number" id="inputNumber" />
+    <button type="button" onclick="checkNumber()">Kiểm tra</button>
+  </body>
+  <script>
+    const checkNumber = () => {
+      let inputValue = document.getElementById("inputNumber").value;
+      if (inputValue % 2 === 0) {
+        alert(`${inputValue} là số chẵn`);
+      } else {
+        alert(`${inputValue} là số lẻ`);
+      }
+    };
+  </script>
+</html>
