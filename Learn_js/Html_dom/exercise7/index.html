@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Look up the price of fruit</title>
+  </head>
+  <body>
+    <h1>Giá hoa quả</h1>
+    <input type="text" id="input" />
+    <button type="button" id="btn" onclick="seePrice()">Xem giá</button>
+    <h2 id="display"></h2>
+    <script>
+      let input = document.getElementById("input");
+      let oi = 20000;
+      let duaHau = 20000;
+      let tao = 30000;
+      let xoai = 30000;
+      let cam = 40000;
+      let chomChom = 40000;
+      let mangCut = 50000;
+      const seePrice = () => {
+        let display = document.getElementById("display");
+        switch (input.value) {
+          case "Ổi":
+          case "Dưa hấu":
+            display.innerHTML = `${oi} VNĐ/kg`;
+            break;
+          case "Táo":
+          case "Xoài":
+            display.innerHTML = `${tao} VNĐ/kg`;
+            break;
+          case "Cam":
+          case "Chôm chôm":
+            display.innerHTML = `${cam} VNĐ/kg`;
+            break;
+          case "Măng cụt":
+            display.innerHTML = `${mangCut} VNĐ/kg`;
+            break;
+          default:
+            display.innerHTML = "Hoa quả không có trong bảng giá";
+            break;
+        }
+      };
+    </script>
+  </body>
+</html>
