@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leap year</title>
+  </head>
+  <body>
+    <input type="text" id="year" name="year" placeholder="Nhập năm" />
+    <button id="button">Check</button>
+    <h2 id="result"></h2>
+    <script>
+        /*
+        Quy tắc xác định năm nhuận:
+          + Những năm chia hết cho 4 mà không chia hết cho 100 là năm nhuận.
+          + Những năm chia hết cho 100 mà không chia hết cho 400 thì KHÔNG PHẢI là năm nhuận.
+          + Những năm đồng thời chia hết cho 100 và 400 là năm nhuận.
+        */
+      const checkYear = () => {
+        let year = parseInt(document.getElementById("year").value);
+        let isLeapYear = false;
+        let isDivisible4 = year % 4 === 0;
+        if (isDivisible4) {
+          let isDivisible100 = year % 100 === 0;
+          if (isDivisible100) {
+            let isDivisible400 = year % 400 === 0;
+            if (isDivisible400) {
+              isLeapYear = true;
+            }
+          } else {
+            isLeapYear = true;
+          }
+        }
+
+        if(isLeapYear) {
+            document.getElementById("result").innerHTML = `${year} là năm nhuận`;
+        } else {
+            document.getElementById("result").innerHTML = `${year} không phải là năm nhuận`;
+        }
+      };
+      document.getElementById("button").addEventListener("click", checkYear);
+    </script>
+  </body>
+</html>
