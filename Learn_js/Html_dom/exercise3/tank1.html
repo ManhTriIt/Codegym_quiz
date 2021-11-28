@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tank 1990</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .buttons {
+        position: relative;
+        width: 8rem;
+        height: 7rem;
+        top: 2rem;
+      }
+      .button {
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+      }
+      .up {
+        top: 0;
+        left: 4rem;
+      }
+
+      .down {
+        bottom: 0;
+        left: 4rem;
+      }
+
+      .right {
+        top: 2.5rem;
+        right: 0;
+      }
+
+      .left {
+        top: 2.5rem;
+        left: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        border: 1px solid black;
+        height: 190px;
+        width: 190px;
+        background-color: black;
+      "
+    >
+      <img
+        id="tank"
+        src="tank.png"
+        style="position: relative; top: 0px; left: 0px"
+        width="19"
+        height="19"
+      />
+    </div>
+    <div class="buttons">
+      <button id="upBtn" class="button up" value="up" onclick="moveUp()">
+        &uarr;
+      </button>
+      <button
+        id="downBtn"
+        class="button down"
+        value="down"
+        onclick="moveDown()"
+      >
+        &darr;
+      </button>
+      <button
+        id="rightBtn"
+        class="button right"
+        value="right"
+        onclick="moveRight()"
+      >
+        &rarr;
+      </button>
+      <button
+        id="leftBtn"
+        class="button left"
+        value="left"
+        onclick="moveLeft()"
+      >
+        &larr;
+      </button>
+    </div>
+    <script>
+      const tank = document.getElementById("tank");
+
+      const getPosition = () => {
+        return {
+          left: tank.offsetLeft,
+          top: tank.offsetTop,
+        };
+      };
+
+      const moveUp = () => {
+        let curPosition = getPosition();
+        if (curPosition.top - 19 > 0) {
+          tank.style.top = curPosition.top - 19 + "px";
+          tank.style.transform = "rotate(0deg)";
+        }
+      };
+
+      const moveDown = () => {
+        let curPosition = getPosition();
+        if (curPosition.top + 19 < 189) {
+          tank.style.top = curPosition.top + 19 + "px";
+          tank.style.transform = "rotate(180deg)";
+        }
+      };
+
+      const moveRight = () => {
+        let curPosition = getPosition();
+        if (curPosition.left + 19 < 189) {
+          tank.style.left = curPosition.left + 19 + "px";
+          tank.style.transform = "rotate(90deg)";
+        }
+      };
+
+      const moveLeft = () => {
+        let curPosition = getPosition();
+        if (curPosition.left - 19 > 0) {
+          tank.style.left = curPosition.left - 19 + "px";
+          tank.style.transform = "rotate(270deg)"
+        }
+      };
+    </script>
+  </body>
+</html>
