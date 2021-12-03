@@ -7,22 +7,34 @@
     <title>Login</title>
   </head>
   <body>
+    <form>
+      <input
+        type="text"
+        name="userName"
+        id="userName"
+        placeholder="Please enter your username"
+      />
+      <button type="button" name="login" id="login">Login</button><br /><br />
+      <span></span>
+    </form>
     <script>
-      const userName = prompt("Please enter your username");
-      if (userName === "Admin") {
-        const passWord = prompt("Please enter your password");
-        if (passWord === "TheMaster") {
-          alert("Welcome");
-        } else if (passWord === null) {
-          alert("Canceled");
+      const userName = document.querySelector("#userName");
+
+      const login = () => {
+        if (userName.value === "Admin") { 
+          const passWord = prompt("Please enter your password");
+          if (passWord === "TheMaster") {
+            alert("Welcome");
+          } else if (passWord  === null) {
+            alert("Canceled");
+          } else {
+            alert("Wrong password");
+          }
         } else {
-          alert("Wrong password");
+          document.querySelector("span").innerHTML = `I don’t know you`;
         }
-      } else if (userName === null) {
-        alert("Canceled");
-      } else {
-        alert("I don’t know you");
-      }
+      };
+      document.querySelector("#login").addEventListener("click", login);
     </script>
   </body>
 </html>

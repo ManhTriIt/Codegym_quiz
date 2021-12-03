@@ -17,9 +17,7 @@
     <h2 id="result"></h2>
     <script>
       const convert = () => {
-        const calendarYear = Number(
-          document.getElementById("calendarYear").value
-        );
+        const calendarYear = Number(document.querySelector("#calendarYear").value);
         let can = calendarYear % 10;
         let chi = calendarYear % 12;
         switch (can) {
@@ -92,11 +90,9 @@
             chi = "Mùi";
             break;
         }
-        document.getElementById(
-          "result"
-        ).innerHTML = `Năm âm lịch: ${can} ${chi}`;
+        document.querySelector("#result").innerHTML = `Năm âm lịch: ${can} ${chi}`;
       };
-      document.getElementById("btn").addEventListener("click", convert);
+      document.querySelector('#btn').addEventListener("click", convert);
     </script>
   </body>
 </html>
