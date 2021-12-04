@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+<input type="text" name="input" id="input" placeholder="Enter number">
+<button type="button" id="button">Click</button>
+<br><br>
+<p id="display"></p>
+<script>
+    const fibonacci = () => {
+        let n = parseInt(document.querySelector("#input").value);
+        let i = 1;
+        let num1 = 0, num2 = 1, nextNum;
+        document.write("Fibonacci Series: ")
+        while (i <= n) {
+            document.write(`${num1}   `);
+            nextNum = num1 + num2;
+            num1 = num2;
+            num2 = nextNum;
+            i++;
+        }
+    }
+    document.querySelector("#button").addEventListener('click', fibonacci);
+</script>
+</body>
+</html>
