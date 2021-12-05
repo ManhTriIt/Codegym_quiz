@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Number</title>
+</head>
+<form>
+    <input type="number" id="number" placeholder="Enter a number">
+    <button type="button" id="btn">Click</button>
+    <h2 id="display"></h2>
+</form>
+<body>
+<script>
+    const reverse = () => {
+        let num = document.querySelector("#number").value;
+        let reverse = 0;
+        let remainder;
+        while (num > 0) {
+            remainder = num % 10;
+            reverse = reverse * 10 + remainder;
+            num = Math.floor(num / 10);
+        }
+        document.querySelector("#display").innerHTML = `The reverse number is: ${reverse}`;
+    }
+    document.querySelector("#btn").addEventListener("click", reverse);
+</script>
+</body>
+</html>
