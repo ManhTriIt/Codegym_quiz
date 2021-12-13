@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Screen</title>
+  </head>
+  <body>
+    <h2 style="font-family: sans-serif">Sample Screen</h2>
+    <form>
+      <input type="text" id="inputValue" />
+      <button type="button" id="add">Add</button>
+      <button type="button" id="btn">Display</button>
+      <p id="display"></p>
+    </form>
+
+    <script>
+      let item = document.querySelector("#inputValue");
+      let arr = [];
+      const addItem = () => {
+        let itemValue = item.value;
+        arr.push(itemValue);
+      };
+      const btn = () => {
+        let element = arr.map((item, index) => {
+          return `Element ${index} = ${item} <br>`;
+        });
+        document.querySelector("#display").innerHTML = element;
+      };
+      document.querySelector("#add").addEventListener("click", addItem);
+      document.querySelector("#btn").addEventListener("click", btn);
+    </script>
+  </body>
+</html>

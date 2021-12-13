@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci 2</title>
+</head>
+<body>
+<script>
+    let i = 0;
+    let num1 = 0;
+    let num2 = 1;
+    let nextNum;
+    while (i >= 0) {
+        nextNum = num1 + num2;
+        num1 = num2;
+        num2 = nextNum;
+        if (num1 % 5 === 0) {
+            document.write(`Số đầu tiên trong dãy fibonacci chia hết cho 5 là: ${num1}`);
+            break;
+        }
+        i++;
+    }
+</script>
+</body>
+</html>
