@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice 4</title>
+  </head>
+  <body>
+    <script>
+      let nums = [-3, 2, 11, 3, 4, 1];
+      let max = Math.max.apply(Math, nums);
+      let min = Math.min.apply(Math, nums)
+      let i = nums.indexOf(max);
+      let j = nums.indexOf(min);
+      alert(`Max: ${max} at position ${i}`);
+      alert(`Min: ${min} at position ${j}`);
+    </script>
+  </body>
+</html>
