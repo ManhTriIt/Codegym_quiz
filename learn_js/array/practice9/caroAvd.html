@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Caro Game</title>
+</head>
+<body>
+<h1>Caro Game</h1>
+<hr/>
+<div id="boardGame"></div>
+<hr/>
+<button id="play">Play</button>
+<button id="display">Start</button>
+<script>
+    let arr
+    let value = '&nbsp;X '
+
+    const init = () => {
+        arr = new Array(5)
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = new Array(5)
+            for (let j = 0; j < arr[i].length; j++) {
+                arr[i][j] = '&ensp;.&ensp;'
+            }
+        }
+    }
+
+    const display = () => {
+        let data = ''
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                data += arr[i][j] + '&ensp;'
+            }
+            data += '<br>'
+        }
+        document.querySelector('#boardGame').innerHTML = data
+    }
+    document.querySelector('#display').addEventListener('click', display)
+
+    const play = () => {
+        let x = +prompt('Nhập vào vị trí hàng')
+        let y = +prompt('Nhập vào vị trí cột')
+
+        if (arr[x][y] !== '&ensp;.&ensp;') {
+            alert('Ô này đã được chọn, mời chơi lại')
+        } else {
+            arr[x][y] = value
+            if (value === '&nbsp;X ') {
+                value = '&nbsp;O '
+            } else {
+                value = '&nbsp;X '
+            }
+        }
+        display()
+    }
+    document.querySelector('#play').addEventListener('click', play)
+
+    window.onload = init
+</script>
+</body>
+</html>

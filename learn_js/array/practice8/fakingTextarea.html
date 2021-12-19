@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAKING TEXTAREA</title>
+</head>
+<body>
+<h2>Type anything slowly</h2>
+<form>
+    <textarea name="txt" id="myGame" cols="40" rows="10" onkeydown="typeTextarea();"></textarea>
+</form>
+<script>
+    let content = ''
+    let fakingTxt = 'TÔI LÀ MỘT ĐỨA NGỐC!!'
+    let fakingTxtArr = fakingTxt.split('')
+
+    function typeTextarea () {
+        let input = document.querySelector('#myGame').value
+        let length = input.length
+        if (length > 0) {
+            for (let i = 0; i < length; i++) {
+                content += fakingTxtArr[i]
+                if (i === fakingTxt.length) {
+                    document.querySelector('#myGame').value = ''
+                    content = ''
+                }
+            }
+        }
+        document.querySelector('#myGame').value = content
+        content = ''
+        setTimeout(typeTextarea, 1)
+    }
+</script>
+</body>
+</html>

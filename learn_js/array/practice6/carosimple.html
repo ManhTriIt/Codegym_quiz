@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Caro Game</h1>
+    <hr />
+    <div id="boardGame"></div>
+    <hr />
+    <button onclick="play()">Play</button>
+    <button onclick="start()">Start</button>
+    <script>
+      const arr = new Array(5);
+      for (let i = 0; i < arr.length; i++) {
+        arr[i] = [0, 0, 0, 0, 0];
+      }
+
+      const start = () => {
+        let data = "";
+        for (let i = 0; i < arr.length; i++) {
+          for (let j = 0; j < arr[i].length; j++) {
+            data += arr[i][j] + "&ensp;"; //&nbsp;  &emsp;  &ensp;
+          }
+          data += "<br>";
+        }
+        document.getElementById("boardGame").innerHTML = data;
+      };
+
+      const play = () => {
+        let x = +prompt("Nhập vào vị trí hàng");
+        let y = +prompt("Nhập vào vị trí hàng");
+        arr[x][y] = "X";
+        start();
+      };
+    </script>
+  </body>
+</html>

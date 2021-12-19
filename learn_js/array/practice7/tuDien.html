@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Từ điển</title>
+  </head>
+
+  <body>
+    <h2>Từ điển</h2>
+    <div>
+      <input type="text" id="input" />
+      <button id="btn" onclick="myTranslate()">Dịch</button>
+      <hr />
+      <p id="text"></p>
+    </div>
+    <script>
+      const myTranslate = () => {
+        const english = ["Banana", "Lemon", "Apple", "Tomato", "Potato"];
+        const vn = ["Chuối", "Chanh", "Táo", "Cà chua", "Khoai tây"];
+        let inputValue = document.querySelector("#input").value;
+        let check = false;
+        for (let i = 0; i < english.length; i++) {
+          if (english[i] === inputValue) {
+            document.querySelector(
+              "#text"
+            ).innerHTML = `Nghĩa của từ là: ${vn[i]}`;
+            check = true;
+            break;
+          }
+        }
+        if (check === false) {
+          document.querySelector("#text").innerHTML = `Không tìm thấy từ`;
+        }
+      };
+    </script>
+  </body>
+</html>

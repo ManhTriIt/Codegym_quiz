@@ -9,7 +9,7 @@
   <body>
     <script>
       let numbers = [-3, 2, 11, 3, 4, 1];
-      let max = Math.max.apply(Math, numbers);
+      let max = Math.max.apply(null, numbers);
       let i = numbers.indexOf(max);
       alert(`Max: ${max} at position ${i}`);
     </script>

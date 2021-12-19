@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revert array</title>
+</head>
+
+<body>
+    <script>
+        const arr = [1, 8, 2, 3, 23, 54]
+        // Sử dụng while loop
+        let first = 0
+        let last = arr.length - 1
+        while (first < last) {
+            let temp = arr[first]
+            arr[first] = arr[last]
+            arr[last] = temp
+            first++
+            last--
+        }
+
+        // Sử dụng for loop
+        // for(let first = 0; first < ((arr.length)/2); first++, last--) {
+        //     let temp = arr[first];
+        //     arr[first] = arr[last];
+        //     arr[last] = temp;
+        // }
+        console.log(arr)
+    </script>
+</body>
+
+</html>
