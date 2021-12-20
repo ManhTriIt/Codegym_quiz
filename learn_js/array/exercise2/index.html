@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2</title>
+</head>
+<body>
+<script>
+    // Bai 1:
+    // const myColor = ['Red', 'Green', 'White', 'Black']
+    // console.log(myColor.join())
+
+    // Bai 2:
+    // const input = prompt('Enter a number')
+    // let result = [input[0]]
+    //
+    // for (let i = 0; i < input.length; i++) {
+    //     if (input[i - 1] % 2 === 0 && input[i] % 2 === 0) {
+    //         result.push('-', input[i])
+    //     } else {
+    //         result.push(input[i])
+    //     }
+    // }
+    //
+    // document.write(result.join(''))
+
+    // Bai 3:
+    let result = []
+    let input = prompt('Enter a text')
+    const upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    const lower = 'abcdefghijklmnopqrstuvwxyz'
+
+    for (let i = 0; i < input.length; i++) {
+        if (upper.indexOf(input[i]) !== -1) {
+            result.push(input[i].toLowerCase())
+        } else if (lower.indexOf(input[i]) !== -1) {
+            result.push(input[i].toUpperCase())
+        } else {
+            result.push(input[i])
+        }
+    }
+
+    document.write(result.join(''))
+
+</script>
+</body>
+</html>
