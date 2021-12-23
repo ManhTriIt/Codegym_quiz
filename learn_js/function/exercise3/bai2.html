@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+<script>
+    let inputValue = prompt('Enter the star name')
+    const stars = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+    const constellations = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+    let result
+
+    const getConstellation = (starName) => {
+        let indexOfStar = stars.indexOf(starName)
+        if (indexOfStar !== -1) {
+            alert(`Not found!`)
+        } else {
+            result = constellations[indexOfStar]
+            alert(`The corresponding constellation is: ${result}`)
+        }
+    }
+
+    getConstellation(inputValue)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body>
+<script>
+    let inputValue = parseInt(prompt('Enter a number'))
+    const calc = (num) => {
+        if (num === 0) {
+            return 1
+        } else {
+            return num * calc(num - 1)
+        }
+    }
+
+    alert(calc(inputValue))
+</script>
+</body>
+</html>

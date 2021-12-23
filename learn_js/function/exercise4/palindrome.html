@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex4</title>
+</head>
+<body>
+<script>
+    const isPalindrome = () => {
+        let string = prompt('Nhập chuỗi bất kỳ')
+        // C1:
+        // let arr = string.split('')
+        // for (let i = 0; i < arr.length; i++) {
+        //     if (arr[i] !== arr[arr.length - 1 - i]) {
+        //         return false
+        //     }
+        //     return true
+        // }
+
+        // C2:
+        string = string.toLowerCase()
+        return string === string.split('').reverse().join('')
+    }
+
+    if (isPalindrome()) {
+        alert('Chuỗi này là chuỗi đối xứng')
+    } else {
+        alert('Chuỗi này không phải chuỗi đối xứng')
+    }
+</script>
+</body>
+</html>

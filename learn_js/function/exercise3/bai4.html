@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 4</title>
+</head>
+<body>
+<script>
+    let inputValue = prompt('Nhập bán kính')
+    const PI = Math.PI
+
+    function tinhDienTich (r) {
+        let s = PI * Math.pow(r, 2)
+        alert(`Chu vi là: ${s.toFixed(2)}`)
+    }
+
+    function tinhChuVi (r) {
+        let c = r * 2 * PI
+        alert(`Diện tích là: ${c.toFixed(2)}`)
+    }
+
+    tinhChuVi(inputValue)
+    tinhDienTich(inputValue)
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex1</title>
+</head>
+<style>
+    .col-wrap {
+        width: 100%;
+    }
+
+    .col-3 {
+        width: 25%;
+        float: left;
+    }
+
+    label {
+        font-weight: bold;
+    }
+</style>
+<body>
+<h2>Convert between feet and meters</h2>
+<div class="col-wrap">
+    <div class="col-3">
+        <label>Amount</label><br/>
+        <input id="input" type="number"/>
+    </div>
+    <div class="col-3">
+        <label>From</label><br/>
+        <select name="from" id="from">
+            <option value="feet" selected>feet</option>
+            <option value="meter">meter</option>
+        </select>
+    </div>
+    <div class="col-3">
+        <label>To</label><br/>
+        <select name="to" id="to">
+            <option value="meter" selected>meter</option>
+            <option value="feet">feet</option>
+        </select>
+    </div>
+    <div class="col-3">
+        <button id="btn">Convert</button>
+    </div>
+</div>
+<div id="display"></div>
+<script>
+    const convert = () => {
+        let inputValue = document.querySelector('#input').value
+        let from = document.querySelector('#from').value
+        let to = document.querySelector('#to').value
+
+        if (from === to) {
+            document.querySelector('#display').innerHTML = `Result: ${inputValue}`
+        } else if (from === 'feet' && to === 'meter') {
+            document.querySelector('#display').innerHTML = `Result: ${0.305 * inputValue}`
+        } else if (from === 'meter' && to === 'feet') {
+            document.querySelector('#display').innerHTML = `Result: ${3.279 * inputValue}`
+        }
+    }
+
+    document.querySelector('#btn').addEventListener('click', convert)
+</script>
+</body>
+</html>

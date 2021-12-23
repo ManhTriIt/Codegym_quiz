@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temperature Converter</title>
+</head>
+<body>
+<h2>Temperature Converter</h2>
+<p>Type a value in the Fahrenheit field to convert the value to Celsius</p>
+<p>Fahrenheit <input type="number" id="inputFahrenheit"></p>
+<p>Celsius: <span id="outputCelsius"></span></p>
+<script>
+    const temperatureConverter = () => {
+        let inputValue = document.querySelector('#inputFahrenheit').value
+        let outputValue = (inputValue - 32) / 1.8
+        document.querySelector('#outputCelsius').innerHTML = outputValue
+    }
+
+    document.querySelector('#inputFahrenheit').addEventListener('change', temperatureConverter)
+</script>
+</body>
+<body>
+</body>
+</html>
