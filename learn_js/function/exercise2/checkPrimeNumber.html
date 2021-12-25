@@ -9,31 +9,60 @@
 </head>
 <body>
 <script>
-    let inputValue = parseInt(prompt('Enter a number'))
-
-    function isPrime (number) {
-        let flag = true
-
+    // Kiểm tra số nguyên tố
+    const isPrime = (number) => {
         if (number < 2) {
-            flag = false
-        } else {
-            for (let i = 2; i < number; i++) {
-                if (number % i === 0) {
-                    flag = false
-                    break
-                }
+            return false
+        }
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                return false
             }
-        }
-
-        if (flag === true) {
-            document.write(`${number} is a prime number`)
-        } else {
-            document.write(`${number} is not a prime number`)
-        }
-
+        } // Theo toán học: chỉ cần kiểm tra đến căn bậc 2 của số đó.
+        return true
     }
 
-    isPrime(inputValue)
+    // Liệt kê snt nhỏ hơn 1000
+    // const primeLessThan1000 = () => {
+    //   for (let i = 2; i < 1000; i++) {
+    //       if (isPrime(i) === true) {
+    //           document.write(`${i}; `)
+    //       }
+    //   }
+    // }
+    //
+    // primeLessThan1000();
+
+    // Hiển thị 50 snt đầu tiên
+    // const countPrime50 = () => {
+    //     let number = 2
+    //     let count = 0
+    //     while (count < 50) {
+    //         if (isPrime(number)) {
+    //             document.write(`${number}; `)
+    //             count++
+    //         }
+    //         number++
+    //     }
+    // }
+    //
+    // countPrime50()
+
+    // Tổng 20 số nguyên tố tính từ số 17
+    const sumPrice20From17 = () => {
+        let number = 17
+        let count = 0
+        let sum = 0
+        while (count < 20) {
+            if (isPrime(number)) {
+                sum += number
+                count++
+            }
+            number++
+        }
+        document.write(`Sum = ${sum}`)
+    }
+    sumPrice20From17()
 </script>
 </body>
 </html>

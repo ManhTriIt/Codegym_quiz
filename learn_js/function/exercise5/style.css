@@ -1,0 +1,53 @@
+button {
+    /*width: 100%;*/
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type=text], select {
+    /*width: 100%;*/
+    padding: 10px 15px;
+    margin: 8px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-edit {
+    width: 30%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#display {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+}
+
+
+
+#display td, #display th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#amount {
+    color: red;
+    text-align: center;
+}
+
+#display tr:nth-child(even){background-color: #f2f2f2;}
+
+#display tr:hover {background-color: #ddd;}

@@ -13,7 +13,11 @@
                 count++
             }
         }
-        console.log(`Ký tự ${char} xuất hiện ${count} lần`)
+        if (count === 0) {
+            document.write(`${count}`)
+        } else {
+            document.write(`Ký tự ${char} xuất hiện ${count} lần`)
+        }
     }
 
     const myArr = ['x', 'y', 'z', 'a', 'b', 'c', 'a', 'z']
