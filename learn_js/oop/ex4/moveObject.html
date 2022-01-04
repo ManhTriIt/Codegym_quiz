@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Game</title>
+</head>
+<body>
+<div id="gameBoard" style="border: 1px solid; width: 1200px; height: 500px"></div>
+<button onclick="start()">Start</button>
+<button onclick="stop()">Stop</button>
+<script>
+    class Hero {
+        image
+        top
+        left
+        speed
+        width
+        height
+
+        constructor (image, top, left, speed, width, height) {
+            this.image = image
+            this.top = top
+            this.left = left
+            this.speed = speed
+            this.width = width
+            this.height = height
+        }
+
+        getHeroElement () {
+            return `<img width="${this.width}"
+                    height="${this.height}"
+                    src="${this.image}"
+                    style="top: ${this.top}px; left: ${this.left}px; position: relative;">`
+        }
+
+        moveRight () {
+            this.left += this.speed
+        }
+
+        moveLeft () {
+            this.left -= this.speed
+        }
+
+        moveUp () {
+            this.top -= this.speed
+        }
+
+        moveDown () {
+            this.top += this.speed
+        }
+    }
+
+    let hero = new Hero('doraemon.gif', 0, 0, 10, 100, 100)
+
+    function play () {
+        if (hero.left < 1100 && hero.top === 0) {
+            hero.moveRight()
+        } else if (hero.top < 400 && hero.left === 1100) {
+            hero.moveDown()
+        } else if (hero.left > 0) {
+            hero.moveLeft()
+        } else if (hero.top > 0) {
+            hero.moveUp()
+        }
+        document.getElementById('gameBoard').innerHTML = hero.getHeroElement()
+    }
+
+    let myInterval
+
+    function start () {
+        myInterval = setInterval(play, 50)
+    }
+
+    function stop () {
+        myInterval = clearInterval(myInterval)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funny Circles</title>
+</head>
+
+<body>
+  <canvas id="myCanvas" width="1000" height="700" style="border: 1px solid #d3d3d3"></canvas>
+  <script>
+    class Circles {
+      x;
+      y;
+      radius;
+      constructor(x, y, radius) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+      }
+
+      get randomHex() {
+        return Math.floor(Math.random() * 255);
+      }
+
+      get randomColor() {
+        let red = this.randomHex;
+        let green = this.randomHex;
+        let blue = this.randomHex;
+        return `rgb(${red}, ${green}, ${blue})`;
+      }
+
+      createCircle() {
+        let ctx = document.getElementById("myCanvas").getContext("2d");
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+        ctx.fillStyle = this.randomColor;
+        ctx.fill();
+      }
+    }
+    let radius = Math.floor(Math.random() * 80);
+    let circle = new Circles(500, 500, radius);
+    function createMultipleCircle() {
+      for (var i = 0; i < 30; i++) {
+        circle.createCircle();
+      }
+    }
+    createMultipleCircle();
+  </script>
+</body>
+
+</html>

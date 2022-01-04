@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        value
+
+        constructor (value) {
+            this.value = value
+        }
+
+        setValue (value) {
+            this.value = value
+        }
+
+        cToF () {
+            let f = this.value * 9 / 5 + 32
+            document.write(`${this.value} C = ${f} F <br>`)
+        }
+
+        cToK () {
+            let k = this.value + 273.15
+            document.write(`${this.value} C = ${k} K`)
+        }
+    }
+
+    let temperature = new Temperature(25)
+    temperature.cToF()
+    temperature.cToK()
+</script>
+</body>
+</html>

@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <script>
-      class Circle {
-        radius;
-        color;
 
-        constructor(radius, color) {
-          (this.radius = radius), (this.color = color);
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
 
-        getRadius() {
-          return this.radius;
-        }
+<body>
+  <script>
+    class Circle {
+      radius;
+      color;
 
-        getArea() {
-          return (Math.PI * Math.pow(this.radius, 2)).toFixed(2);
-        }
+      constructor(radius, color) {
+        (this.radius = radius), (this.color = color);
       }
 
-      let circle = new Circle(4, 'yellow');
-      alert(`Diện tích hình tròn có bán kính ${circle.radius} là ${circle.getArea()}`);
-    </script>
-  </body>
+      getRadius() {
+        return this.radius;
+      }
+
+      getArea() {
+        return (Math.PI * Math.pow(this.radius, 2)).toFixed(2);
+      }
+    }
+
+    let circle = new Circle(4, 'yellow');
+    alert(`Diện tích hình tròn có bán kính ${circle.radius} là ${circle.getArea()}`);
+  </script>
+</body>
+
 </html>

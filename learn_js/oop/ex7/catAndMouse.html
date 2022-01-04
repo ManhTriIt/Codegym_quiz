@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cat and Mouse</title>
+</head>
+
+<body>
+    <script>
+        class Rat {
+            name
+            weight
+            speed
+            status
+            sound
+
+            constructor(name, weight, speed, status) {
+                this.name = name
+                this.weight = weight
+                this.speed = speed
+                this.status = status
+            }
+
+
+            sound() {
+                console.log('Chit chit')
+            }
+
+            setStatus(status) {
+                this.status = status
+            }
+
+            getName() {
+                return this.name
+            }
+
+            getWeight() {
+                return this.weight
+            }
+        }
+
+        class Cat {
+            name
+            weight
+            speed
+            sound
+
+            constructor(name, weight, speed) {
+                this.name = name
+                this.weight = weight
+                this.speed = speed
+            }
+
+            sound() {
+                console.log('Meo meo')
+            }
+
+            catchTheMouse(rat) {
+                if (this.speed > rat.speed) {
+                    return true
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

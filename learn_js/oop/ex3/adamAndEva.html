@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Adam and Eva</title>
+</head>
+<body>
+<script>
+    class Apple {
+        weight
+
+        constructor () {
+            this.weight = 10
+        }
+
+        decrease () {
+            if (!this.isEmpty()) {
+                this.weight--
+            }
+        }
+
+        isEmpty () {
+            if (this.weight === 0) {
+                return true
+            }
+
+            return false
+        }
+
+        getWeight () {
+            return this.weight
+        }
+    }
+
+    class Human {
+        name
+        gender
+        weight
+
+        constructor () {}
+
+        isMale () {
+            return this.gender ? true : false
+        }
+
+        setGender (gender) {
+            this.gender = gender
+        }
+
+        checkApple (apple) {
+            return apple.isEmpty() ? false : true
+        }
+
+        eatApple (apple) {
+            apple.decrease()
+        }
+
+        say (string) {
+            console.log(string)
+        }
+
+        getName () {
+            return this.name
+        }
+
+        setName (name) {
+            this.name = name
+        }
+
+        getWeight () {
+            return this.weight
+        }
+
+        setWeight (weight) {
+            this.weight = weight
+        }
+    }
+
+    let apple = new Apple()
+    let adam = new Human()
+    adam.setName('Adam')
+    adam.setWeight(70)
+    adam.setGender(true)
+    let eva = new Human()
+    adam.setName('Eva')
+    adam.setWeight(45)
+    adam.setGender(false)
+
+    let name = ''
+
+    do {
+        if (name === '' || name === 'Adam') {
+            if (adam.checkApple(apple)) {
+                adam.eatApple(apple)
+            }
+            name = 'Eva'
+            adam.say(name)
+            console.log(apple.getWeight())
+        } else {
+            if (adam.checkApple(apple)) {
+                eva.eatApple(apple)
+            }
+            name = 'Adam'
+            eva.say(name)
+            console.log(apple.getWeight())
+        }
+    } while (!apple.isEmpty())
+    if (name === 'Adam') {
+        console.log('Ba an het roi sao con dua cho toi')
+    } else {
+        console.log('Ong an het roi sao con dua cho toi')
+    }
+</script>
+</body>
+</html>
