@@ -1,68 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <title>Cat and Mouse</title>
-</head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mèo bắt chuột</title>
+  </head>
 
-<body>
+  <body>
     <script>
-        class Rat {
-            name
-            weight
-            speed
-            status
-            sound
-
-            constructor(name, weight, speed, status) {
-                this.name = name
-                this.weight = weight
-                this.speed = speed
-                this.status = status
-            }
-
-
-            sound() {
-                console.log('Chit chit')
-            }
-
-            setStatus(status) {
-                this.status = status
-            }
-
-            getName() {
-                return this.name
-            }
-
-            getWeight() {
-                return this.weight
-            }
+      class Rat {
+        name;
+        weight;
+        speed;
+        status;
+        constructor(name, weight, speed, status) {
+          this.name = name;
+          this.weight = weight;
+          this.speed = speed;
+          this.status = status;
         }
 
-        class Cat {
-            name
-            weight
-            speed
-            sound
-
-            constructor(name, weight, speed) {
-                this.name = name
-                this.weight = weight
-                this.speed = speed
-            }
-
-            sound() {
-                console.log('Meo meo')
-            }
-
-            catchTheMouse(rat) {
-                if (this.speed > rat.speed) {
-                    return true
-                }
-            }
+        makeSound() {
+          console.log("Chit chit");
         }
+
+        get weight() {
+          return this.weight;
+        }
+
+        get speed() {
+          return this.speed;
+        }
+
+        set speed(speed) {
+          this.speed = speed;
+        }
+
+        get status() {
+          return this.status;
+        }
+
+        set status(status) {
+          this.status = status;
+        }
+      }
+
+      class Cat {
+        name;
+        weight;
+        maxSpeed;
+
+        constructor(name, weight, maxSpeed) {
+          this.name = name;
+          this.weight = weight;
+          this.maxSpeed = maxSpeed;
+        }
+
+        makeSound() {
+          console.log("Meo meo");
+        }
+
+        get weight() {
+          return this.weight;
+        }
+
+        get maxSpeed() {
+          return this.maxSpeed;
+        }
+
+        set maxSpeed(maxSpeed) {
+          this.maxSpeed = maxSpeed;
+        }
+
+        catchRat(rat) {
+          if (this.maxSpeed > rat.speed) {
+            console.log("Đã bắt được!");
+            console.log("Đang ăn");
+            this.eatRat(rat)
+            console.log(this.weight);
+          } else {
+            console.log("Chuột chạy nhanh thế nhờ, mãi không bắt được!");
+          }
+        }
+
+        eatRat(rat) {
+          if (rat.status) {
+            this.weight += rat.weight;
+            rat.status = false;
+            console.log("Ăn xong");
+          } else {
+            console.log("Chuột chết rồi, ăn sao!");
+          }
+        }
+      }
+
+      let rat1 = new Rat("rat1", 2, 10, true);
+      let rat2 = new Rat("rat2", 3, 20, true);
+      let rat3 = new Rat("rat3", 4, 10, false);
+      let rat4 = new Rat("rat4", 5, 20, false);
+      let cat = new Cat("cat", 10, 15);
     </script>
-</body>
-
+  </body>
 </html>

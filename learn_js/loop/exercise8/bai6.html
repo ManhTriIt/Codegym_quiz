@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bai 6</title>
+  </head>
+  <body>
+    <script>
+      const checkDivisible7 = (number) => {
+        if (number % 7 === 0) {
+          return true;
+        } else {
+          return false;
+        }
+      };
+
+      const total = (number) => {
+        let count = 0;
+        let n = 0;
+        let total = 0;
+        while (count < number) {
+          if (checkDivisible7(n)) {
+            total += n;
+            count++;
+          }
+          n++;
+        }
+        document.write(`Tổng 30 số đầu tiên chia hết cho 7 là: ${total}`);
+      };
+
+      total(30);
+    </script>
+  </body>
+</html>

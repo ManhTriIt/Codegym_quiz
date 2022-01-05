@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remote and Tv</title>
+  </head>
+  <body>
+    <script>
+      class Tv {
+        chanel;
+        volumn;
+        status;
+        constructor(chanel, volumn) {
+          this.chanel = chanel;
+          this.volumn = volumn;
+          this.status = false;
+        }
+
+        get chanel() {
+          return this.chanel;
+        }
+
+        get volumn() {
+          return this.volumn;
+        }
+
+        get status() {
+          return this.status;
+        }
+
+        plusChanel() {
+          this.chanel++;
+        }
+
+        decreaseChanel() {
+          this.chanel--;
+        }
+
+        plusVolumn() {
+          this.volumn++;
+        }
+
+        decreaseVolumn() {
+          this.volumn--;
+        }
+
+        controlChanel(chanel) {
+          this.chanel = chanel;
+        }
+      }
+
+      class Remote {
+        code;
+        constructor(code) {
+          this.code = code;
+        }
+
+        onOffTv(tv) {
+          tv.status = !tv.status;
+        }
+
+        plusChanel(tv) {
+          if (tv.status) {
+            tv.plusChanel();
+          } else {
+            console.log("Bật tv đã");
+          }
+        }
+
+        decreaseChanel(tv) {
+          if (tv.status) {
+            tv.decreaseChanel();
+          } else {
+            console.log("Bật tv đã");
+          }
+        }
+
+        plusVolumn(tv) {
+          if (tv.status) {
+            tv.plusVolumn();
+          } else {
+            console.log("Bật TV đã");
+          }
+        }
+
+        decreaseVolumn(tv) {
+          if (tv.status) {
+            tv.decreaseVolumn();
+          } else {
+            console.log("Bật TV đã");
+          }
+        }
+
+        controlChanel(tv, chanel) {
+          if (tv.status) {
+            tv.controlChanel(chanel);
+          } else {
+            console.log("Bật TV đã");
+          }
+        }
+      }
+
+      let tv = new Tv(0, 0);
+      let remote = new Remote(1234);
+
+      console.log(tv);
+      remote.onOffTv(tv);
+      remote.controlChanel(tv, 7);
+      console.log(tv);
+      remote.controlChanel(tv, 3);
+      remote.plusVolumn(tv);
+      remote.plusVolumn(tv);
+      console.log(tv);
+      remote.onOffTv(tv);
+    </script>
+  </body>
+</html>

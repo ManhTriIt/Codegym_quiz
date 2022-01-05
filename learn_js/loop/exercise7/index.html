@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex 12</title>
+  </head>
+  <body>
+    <script>
+      let input = +prompt("Vui lòng nhập số lượng số nguyên tố cần in");
+      document.write(`${input} số nguyên tố đầu tiên là: <br>`);
+
+      const isPrime = (number) => {
+        if (number < 2) {
+          return false;
+        } else {
+          for (let n = 2; n < Math.sqrt(number); n++) {
+            if (number % n === 0) {
+              return false;
+            }
+            return true;
+          }
+        }
+      };
+
+      const primeLessThanInput = (value) => {
+        let n = 2;
+        let count = 0;
+        while (count < value) {
+          if (isPrime(n)) {
+            document.write(`${n} `);
+            count++;
+          }
+          n++;
+        }
+      };
+
+      primeLessThanInput(input);
+    </script>
+  </body>
+</html>
