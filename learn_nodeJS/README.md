@@ -228,6 +228,22 @@ mãn trả về -1.
   })
   console.log(result) // 1
   ```
+#### sort
+- sort() sắp xếp các phần tử mảng theo thứ tự tăng dần.
+- compareFunction(callback):
+  + Nếu return về một số < 0 thì a trước b
+  + Return về một số > 0 thì b trước a
+  + Nếu bằng thì giữ nguyên vị trí
+- Syntax:
+  ```
+  arr.sort((a, b) => a - b)
+  ```
+- Example:
+  ```
+  const numbers = [2, 34, 3, 4];
+  numbers.sort((a, b) => a - b)
+  console.log(numbers) // [2, 3, 4, 34]
+  ```
 #### concat
 - concat() trả về một array mới bằng cách merged tất cả elements của các arrays
 lại với nhau.
