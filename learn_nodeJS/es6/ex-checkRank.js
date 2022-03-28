@@ -18,8 +18,8 @@ student.sort((a, b) => b.score - a.score);
 // > 0 thì b trước a
 // = 0 giữ nguyên vị trí
 
-const index = student.findIndex((element) => {
+const rank = student.findIndex((element) => {
   return element.name === "A";
-});
+}) + 1;
  
-console.log(`Học sinh A có điểm môn toán đứng thứ ${index + 1} trong lớp`);
+console.log(`Học sinh A có điểm môn toán đứng thứ ${rank} trong lớp`);

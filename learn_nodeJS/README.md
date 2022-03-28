@@ -275,4 +275,9 @@ tất cả các phần tử mảng là giá trị duy nhất.
   })
   console.log(result); // 20
   ```
+### 6. Giới thiệu NodeJS
+- NodeJS là một môi trường máy chủ mã nguồn mở, được xây dựng trên bộ công
+cụ V8 Javascript.
+- Environments Variables (.env) được gọi là các biến môi trường.
+Chúng là các biến được cài đặt bởi hệ điều hành
   
