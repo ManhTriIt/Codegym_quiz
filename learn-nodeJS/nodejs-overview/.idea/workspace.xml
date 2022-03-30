@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb8bd2d8-9415-4422-b232-6448913ce421" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../learn_html/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_html/.idea/Learn_html.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_html/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_html/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_html/basic/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_html/form/interestsForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_html/form/registrationForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_html/form/simpleform.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_html/list/simpleList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_html/table/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_html/table/tablesimple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/array/exercise1/tuDien.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/array/exercise2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/array/exercise3/fakingTextarea.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/array/exercise4/ticTacToe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/array/practice1/sampleScreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/array/practice2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/array/practice3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/array/practice4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/array/practice5/reverseArray.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/array/practice6/carosimple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/canvas/practice1/funnyCircles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/canvas/practice2/moveRectangle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/conditional/exercise1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/conditional/exercise2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/conditional/exercise4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/conditional/exercise5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/conditional/exercise6/lunarYear.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/conditional/exercise8/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/conditional/practice1/ex01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/conditional/practice2/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/conditional/practice2/employee.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/conditional/practice3/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/conditional/practice4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/conditional/practice4/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/conditional/practice4/sign.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/exercise1/convertFeetAndMeters.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/exercise2/checkPrimeNumber.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/exercise3/bai1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/exercise3/bai10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/exercise3/bai2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/exercise3/bai3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/exercise3/bai4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/exercise3/bai5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/exercise3/bai7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/exercise3/bai8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/exercise3/bai9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/exercise4/palindrome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/exercise5/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/exercise5/productManagement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/exercise5/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/practice1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/practice2/temperatureConverter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/function/practice3/minValue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/html_dom/exercise1/calculator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/html_dom/exercise1/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/html_dom/exercise2/tank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/html_dom/exercise2/tank1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/html_dom/exercise3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/html_dom/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/html_dom/practice/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/html_dom/practice2/leapYear.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/exercise1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/exercise2/fibonacci.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/exercise3/reverseNumber.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/exercise4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/exercise5/index1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/exercise5/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/exercise6/total.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/exercise7/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/exercise8/bai1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/exercise8/bai2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/exercise8/bai3-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/exercise8/bai4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/exercise8/bai6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/exercise8/bai7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/practice1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/practice1/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/practice2/dowhilesample.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/practice3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/practice3/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/practice4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/practice4/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/loop/practice5/alibaba.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/oop/ex1/rectangle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/oop/ex2/temperature.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/oop/ex3/adamAndEva.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/oop/ex4/doraemon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/oop/ex4/moveObject.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/oop/ex5/electricLamp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/oop/ex7/catAndMouse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/oop/ex8/remoteAndTv.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/oop/practice1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/oop/practice2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/oop/practice3/flashLamp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/var_datatype_operator/exercise1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/var_datatype_operator/exercise2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/var_datatype_operator/exercise3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/var_datatype_operator/exercise4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/var_datatype_operator/practice1/practice1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/var_datatype_operator/practice2/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/var_datatype_operator/practice3/bai1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/var_datatype_operator/practice3/bai2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/var_datatype_operator/practice3/bai3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_js/var_datatype_operator/practice4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_nodeJS/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_nodeJS/es6/ex-checkArr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_nodeJS/es6/ex-checkGender.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_nodeJS/es6/ex-checkRank.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_nodeJS/es6/ex-total.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_nodeJS/es6/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_nodeJS/es6/practice-class.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_nodeJS/es6/practice-filter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_nodeJS/es6/practice-map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_nodeJS/es6/practice-sort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_nodeJS/nodejs_overview/practice-averageScore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_nodeJS/nodejs_overview/practice-checkPrimeNumber.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_nodeJS/nodejs_overview/practice-maxNumber.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../learn_nodeJS/nodejs_overview/practice-solveTheEquation.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="274D1WOMNLm73jp3wTD7T60W9Db" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb8bd2d8-9415-4422-b232-6448913ce421" name="Changes" comment="" />
+      <created>1648570250056</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648570250056</updated>
+      <workItem from="1648570251754" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

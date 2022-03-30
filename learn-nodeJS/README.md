@@ -280,4 +280,29 @@ tất cả các phần tử mảng là giá trị duy nhất.
 cụ V8 Javascript.
 - Environments Variables (.env) được gọi là các biến môi trường.
 Chúng là các biến được cài đặt bởi hệ điều hành
-  
+- Các bước thiết lập dự án:
+  - Chạy lệnh: `npm init` để tạo file package.json - lưu trữ thông tin project.
+  - Chạy: `npm i express` để cài đặt express.
+  - Tạo file index.js có nd:
+    ```
+    const express = require('express');
+    const app = express();
+    const PORT = 8797;
+    app.use('/', (req, res) => {
+      res.json({"mess": "Hello World!"})
+    });
+    app.listen(PORT, () => {
+      console.log(`Server started on http://localhost:${PORT}`)
+    });
+    module.exports = app;
+    ```
+  - Chạy: `node index.js`.
+  - Vào postman test lại api.
+  - Cài đặt nodemon để tự restart lại server khi có sự thay đổi: `npm i nodemon`.
+  - Cài các package cần dùng:
+    - body parser (parse các req tới server).
+    - mongoose (mô hình hóa object data để đơn giản hóa các tương tác với MongoDB).
+    - bcrypt (hashing và salting passwords).
+    - express session (xử lý session).
+    - connect-mongo (lưu trữ session trong MongoDB).
+    - dotenv (làm việc với file .env).
