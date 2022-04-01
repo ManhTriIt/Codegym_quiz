@@ -1,3 +1,4 @@
+// Tính điểm trung bình học sinh trong lớp
 const myClass = [
   {
     name: "An Nguyễn",
@@ -18,8 +19,8 @@ const myClass = [
 ];
 
 let totalScore = myClass.reduce((total, currentValue) => {
-    return currentValue.score+ total;
-}, 0)
+  return currentValue.score + total;
+}, 0);
 
 const average = totalScore / myClass.length;
 

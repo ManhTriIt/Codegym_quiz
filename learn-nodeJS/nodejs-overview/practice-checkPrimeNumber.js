@@ -1,3 +1,4 @@
+// Kiem tra so nguyen to
 const number = 2;
 let isPrimeNumber = true;
 

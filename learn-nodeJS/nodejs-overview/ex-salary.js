@@ -1,6 +1,7 @@
+// Tính lương của nhân viên
 const staff = {
   name: "Bình Nguyễn",
-  c: 50000,
+  hourlyRate: 50000,
   timesheets: [
     {
       date: "1/12/2021",
@@ -37,6 +38,6 @@ const totalHours = staff.timesheets.reduce((total, currentValue) => {
   return total + currentValue.hours;
 }, 0);
 
-const salary = totalHours * staff.c;
+const salary = totalHours * staff.hourlyRate;
 
 console.log(`Lương của nhân viên là: ${salary}`);
