@@ -1,7 +1,8 @@
-exports.add = () => x + y;
+const Math = () => {};
 
-exports.sub = () => x - y;
+Math.add = (a, b) => a + b;
+Math.sub = (a, b) => a - b;
+Math.multi = (a, b) => a * b;
+Math.div = (a, b) => a / b;
 
-exports.multi = () => x * y;
-
-exports.div = () => x / y;
+module.exports = Math;
